@@ -313,6 +313,11 @@
             this.reviewsTableAdapter.FillByFileId(this.dataSet11.Reviews, file.Id);
             this.reviewsTableAdapter.FillUnresolvedByFile_Id(this.dataSet12.Reviews, file.Id);
 
+            foreach (var review in this.dataSet11.Reviews)
+            {
+                
+            }
+
             //using (var context = new CroolContext(Config.ConnectionString))
             //{
             //    var reviews = context.Reviews.Where(r => r.File_Id == file.Id).ToList();

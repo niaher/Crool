@@ -26,38 +26,6 @@
             Gets or sets host (visual studio instance) of this user control.
             </summary>
         </member>
-        <member name="T:Crool.AddIn.Connect">
-            <summary>The object for implementing an Add-in.</summary>
-            <seealso class='IDTExtensibility2' />
-        </member>
-        <member name="M:Crool.AddIn.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
-            <summary>Implements the OnConnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being loaded.</summary>
-            <param name='application'>Root object of the host application.</param>
-            <param name='connectMode'>Describes how the Add-in is being loaded.</param>
-            <param name='addInInst'>Object representing this Add-in.</param>
-            <seealso class='IDTExtensibility2' />
-        </member>
-        <member name="M:Crool.AddIn.Connect.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
-            <summary>Implements the OnDisconnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being unloaded.</summary>
-            <param name='disconnectMode'>Describes how the Add-in is being unloaded.</param>
-            <param name='custom'>Array of parameters that are host application specific.</param>
-            <seealso class='IDTExtensibility2' />
-        </member>
-        <member name="M:Crool.AddIn.Connect.OnAddInsUpdate(System.Array@)">
-            <summary>Implements the OnAddInsUpdate method of the IDTExtensibility2 interface. Receives notification when the collection of Add-ins has changed.</summary>
-            <param name='custom'>Array of parameters that are host application specific.</param>
-            <seealso class='IDTExtensibility2' />		
-        </member>
-        <member name="M:Crool.AddIn.Connect.OnStartupComplete(System.Array@)">
-            <summary>Implements the OnStartupComplete method of the IDTExtensibility2 interface. Receives notification that the host application has completed loading.</summary>
-            <param name='custom'>Array of parameters that are host application specific.</param>
-            <seealso class='IDTExtensibility2' />
-        </member>
-        <member name="M:Crool.AddIn.Connect.OnBeginShutdown(System.Array@)">
-            <summary>Implements the OnBeginShutdown method of the IDTExtensibility2 interface. Receives notification that the host application is being unloaded.</summary>
-            <param name='custom'>Array of parameters that are host application specific.</param>
-            <seealso class='IDTExtensibility2' />
-        </member>
         <member name="T:Crool.AddIn.Business.DataAcess.Dataset.DataSet1">
              <summary>
             Represents a strongly typed in-memory cache of data.
@@ -202,6 +170,38 @@
              <summary>
             Used to sort self-referenced table's rows
             </summary>
+        </member>
+        <member name="T:Crool.AddIn.Connect">
+            <summary>The object for implementing an Add-in.</summary>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:Crool.AddIn.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
+            <summary>Implements the OnConnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being loaded.</summary>
+            <param name='application'>Root object of the host application.</param>
+            <param name='connectMode'>Describes how the Add-in is being loaded.</param>
+            <param name='addInInst'>Object representing this Add-in.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:Crool.AddIn.Connect.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
+            <summary>Implements the OnDisconnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being unloaded.</summary>
+            <param name='disconnectMode'>Describes how the Add-in is being unloaded.</param>
+            <param name='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:Crool.AddIn.Connect.OnAddInsUpdate(System.Array@)">
+            <summary>Implements the OnAddInsUpdate method of the IDTExtensibility2 interface. Receives notification when the collection of Add-ins has changed.</summary>
+            <param name='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />		
+        </member>
+        <member name="M:Crool.AddIn.Connect.OnStartupComplete(System.Array@)">
+            <summary>Implements the OnStartupComplete method of the IDTExtensibility2 interface. Receives notification that the host application has completed loading.</summary>
+            <param name='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:Crool.AddIn.Connect.OnBeginShutdown(System.Array@)">
+            <summary>Implements the OnBeginShutdown method of the IDTExtensibility2 interface. Receives notification that the host application is being unloaded.</summary>
+            <param name='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
         </member>
     </members>
 </doc>

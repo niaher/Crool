@@ -59,23 +59,6 @@
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Business\DataAcess\CroolContext.cs" />
-    <Compile Include="Business\DataAcess\Dataset\DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Business\DataAcess\Mapping\CommentMap.cs" />
-    <Compile Include="Business\DataAcess\Mapping\CroolProjectMap.cs" />
-    <Compile Include="Business\DataAcess\Mapping\FileMap.cs" />
-    <Compile Include="Business\DataAcess\Mapping\ProjectMap.cs" />
-    <Compile Include="Business\DataAcess\Mapping\ReviewMap.cs" />
-    <Compile Include="Business\Entities\Comment.cs" />
-    <Compile Include="Business\Entities\CroolProject.cs" />
-    <Compile Include="Business\Entities\File.cs" />
-    <Compile Include="Business\Entities\Project.cs" />
-    <Compile Include="Business\Entities\Review.cs" />
-    <Compile Include="Business\Entities\User.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Connect.cs">
       <SubType>Code</SubType>
@@ -161,20 +144,14 @@
       <DependentUpon>MyControl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Crool.TextHighlight\Crool.TextHighlight.csproj">
+      <Project>{7251EA03-BABC-4A3F-BB9A-B28C1D641C14}</Project>
+      <Name>Crool.TextHighlight</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Business\DataAcess\Dataset\DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Business\DataAcess\Dataset\DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Business\DataAcess\Dataset\DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
