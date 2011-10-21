@@ -49,7 +49,7 @@
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\CroolProject.cs" />
     <Compile Include="Entities\File.cs" />
-    <Compile Include="Entities\Project.cs" />
+    <Compile Include="Entities\VisualStudioProject.cs" />
     <Compile Include="Entities\Review.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

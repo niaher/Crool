@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Managers\BaseManager.cs" />
+    <Compile Include="Managers\CroolProjectManager.cs" />
     <Compile Include="Managers\ReviewManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

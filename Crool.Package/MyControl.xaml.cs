@@ -13,13 +13,8 @@
         {
             InitializeComponent();
 
-            this.dataGrid1.DataContext = new ReviewManager().GetByFileId(1);
-            
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            
+            //this.dataGrid1.DataContext = new ReviewManager().GetByFileId(1);
+            this.cmbProjects.DataContext = new CroolProjectManager().GetAll();
         }
     }
 }

@@ -10,6 +10,7 @@
             this.Context = context;
 
             this.ReviewRepository = new ReviewRepository(context);
+            this.CroolProjectRepository = new CroolProjectRepository(context);
         }
 
         public BaseManager()
@@ -18,6 +19,7 @@
         }
 
         protected ReviewRepository ReviewRepository { get; set; }
+        protected CroolProjectRepository CroolProjectRepository { get; set; }
 
         private CroolContext Context { get; set; }
     }

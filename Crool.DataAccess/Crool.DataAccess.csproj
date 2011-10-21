@@ -70,6 +70,7 @@
     <Compile Include="Repositories\BaseRepository.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Repositories\ProjectRepository.cs" />
     <Compile Include="Repositories\ReviewRepository.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>

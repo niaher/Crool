@@ -4,15 +4,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
-             mc:Ignorable="d" 
-             d:DesignHeight="346" d:DesignWidth="364"
-             Name="MyToolWindow"
+             mc:Ignorable="d" Name="MyToolWindow"
              Background="{DynamicResource {x:Static vsfx:VsBrushes.ToolWindowBackgroundKey}}">
-    <Grid Height="349" Width="362">
-        <StackPanel Orientation="Vertical" Margin="-4,0,0,0">
-            <TextBlock Margin="10" HorizontalAlignment="Center" Foreground="{DynamicResource {x:Static vsfx:VsBrushes.ToolWindowTextKey}}">This is a toolwindow with WPF content</TextBlock>
-            <Button Content="Button" Height="23" Name="button1" Width="75" Click="button1_Click" />
-            <DataGrid AutoGenerateColumns="True"  Height="144" Name="dataGrid1" Width="316" ItemsSource="{Binding}" />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="242*" />
+            <RowDefinition Height="107*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Margin="0" Grid.RowSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <TabControl Name="tabCrool" TabStripPlacement="Top">
+                <TabItem Header="Project" Name="tabProject">
+                    <ComboBox
+                        Name="cmbProjects"
+                        IsEditable="False"
+                        DataContext="{Binding}"
+                        ItemStringFormat="{Binding}"
+                        DisplayMemberPath="Name"
+                        SelectedValuePath="Id"
+                        SelectedValue="{Binding Path=CroolProject}"/>
+                </TabItem>
+                <TabItem Header="Reviews" Name="tabReviews">
+
+                </TabItem>
+            </TabControl>
         </StackPanel>
     </Grid>
 </UserControl>
